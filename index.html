@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>    
+    <nav class="navigation">
+        <ul class="menu">
+            <li>
+                <a href="#home" class="menu-link">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="menu-link">About</a>
+            </li>
+            <li>
+                <a href="#projects" class="menu-link">Projects</a>
+            </li>
+            <li>
+                <a href="#contact" class="menu-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="home" class="header">
+        <img src="./imgs/photo.jpg" alt="Foto de Adilson Silva" class="profile-photo">
+        <h1 class="profile-name">Adilson Silva</h1>
+        <p class="profile-description">Godot and Front End Developer</p>
+    </main>
+
+    <section id="about" class="about">
+        <h2 class="sub-title">About me</h2>
+        <div class="divbox">
+            <p class="about-paragraph">
+                I am 28 years old, live in Curitiba, Paraná, Brazil, and have a degree in Systems Analysis and Development by Uninter.
+                <br>Since my adolescence, I have developed a great interest in games, programming and technology in general.
+                <br>I have knowledge of C#, SQL, GML and, mainly, the GDScript language.
+                <br>
+                <br>In terms of tools, I am familiar with Visual Studio (in the Code and Community versions) and the Godot development engine.
+                <br>In addition, I have significant experience with Game Maker, a tool that I have used extensively and with which I am fully proficient.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="sub-title">My projects</h2>
+        <div class="projects-divbox">
+            <a href="https://adilson-thiago.itch.io/pac-man">
+                <div class="projects-card">
+                    <img src="./imgs/pac-man.png" alt="project pacman" class="projects-img">
+                    <div class="projects-info">
+                        <h3 class="projects-subtitle">Pac-Man</h3>
+                        <p class="projects-paragraph">3D Pac-Man with online highscore</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://adilson-thiago.itch.io/siren-head">
+                <div class="projects-card">
+                    <img src="./imgs/siren-head.png" alt="project siren-head" class="projects-img">
+                    <div class="projects-info">
+                        <h3 class="projects-subtitle">Siren Head</h3>
+                        <p class="projects-paragraph">Created to explore the graphical limits of a modest PC</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://adilson-thiago.itch.io/image-pixel-bits-editor">
+                <div class="projects-card">
+                    <img src="./imgs/photo-pixel.png" alt="project photo to pixel" class="projects-img">
+                    <div class="projects-info">
+                        <h3 class="projects-subtitle">Image to pixelated art</h3>
+                        <p class="projects-paragraph">Make pixelated effect and 8, 16, 32... color bits effects</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="sub-title">Contact me</h2>
+        <form class="divbox" onsubmit="sendMessage(event)">
+            <div class="formbox">
+                <Input placeholder="Name" class="input-form" id="name">
+            </div>
+            <div class="formbox">
+                <textarea placeholder="Your message" class="input-form" rows="4" id="message"></textarea>
+            </div>
+            <button type="submit" class="button">Send message</button>
+        </form>
+    </section>
+
+    <div class="baseboard">
+        <p class="baseboard-text">
+            2025 <a href="https://www.youtube/devisfun.com">Adilson Silva</a>
+        </p>
+    </div>
+</body>
+
+</html>
